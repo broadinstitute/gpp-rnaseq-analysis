@@ -1,0 +1,133 @@
+version: 1.2
+workflows:
+  - name: cnn-variant-filter
+    subclass: WDL
+    publish: True
+    primaryDescriptorPath: /WGS_pipeline/cnn-variant-filter.wdl
+    testParameterFiles:
+      - /test.json
+    filters: # All tags, no branches
+      branches:
+        - develop
+        - master
+  - name: RNA_aggregate
+    subclass: WDL
+    publish: True
+    primaryDescriptorPath: /RNA_pipeline/RNA_aggregate.wdl
+    testParameterFiles:
+      - /test.json
+    filters: # All tags, no branches
+      branches:
+        - develop
+        - master
+  - name: RNA_pipeline
+    subclass: WDL
+    publish: True
+    primaryDescriptorPath: /RNA_pipeline/RNA_pipeline.wdl
+    testParameterFiles:
+      - /test.json
+    filters: # All tags, no branches
+      branches:
+        - develop
+        - master
+  - name: WGS_pipeline
+    subclass: WDL
+    publish: True
+    primaryDescriptorPath: /WGS_pipeline/WGS_pipeline.wdl
+    testParameterFiles:
+      - /test.json
+    filters: # All tags, no branches
+      branches:
+        - develop
+        - master
+  - name: WGS_aggregate
+    subclass: WDL
+    publish: True
+    primaryDescriptorPath: /WGS_pipeline/WGS_aggregate.wdl
+    testParameterFiles:
+      - /test.json
+    filters: # All tags, no branches
+      branches:
+        - develop
+        - master
+  - name: rnaseq_mutect2_tumor_only
+    subclass: WDL
+    publish: True
+    primaryDescriptorPath: /RNA_pipeline/rnaseq_mutect2_tumor_only.wdl
+    testParameterFiles:
+      - /test.json
+    filters: # All tags, no branches
+      branches:
+        - develop
+        - master
+  - name: rsem_depmap
+    subclass: WDL
+    publish: True
+    primaryDescriptorPath: /RNA_pipeline/rsem_depmap.wdl
+    testParameterFiles:
+      - /test.json
+    filters: # All tags, no branches
+      branches:
+        - develop
+        - master
+        - rsem_confidence_interval_calculation
+  - name: opencravat
+    subclass: WDL
+    publish: True
+    primaryDescriptorPath: /WGS_pipeline/opencravat.wdl
+    testParameterFiles:
+      - /test.json
+    filters: # All tags, no branches
+      branches:
+        - develop
+        - master
+  - name: bcftools_setGT
+    subclass: WDL
+    publish: True
+    primaryDescriptorPath: /WGS_pipeline/bcftools.wdl
+    testParameterFiles:
+      - /test.json
+    filters: # All tags, no branches
+      branches:
+        - develop
+        - master
+  - name: fix_mutect2col
+    subclass: WDL
+    publish: True
+    primaryDescriptorPath: /WGS_pipeline/fix_mutect2col.wdl
+    testParameterFiles:
+      - /test.json
+    filters: # All tags, no branches
+      branches:
+        - develop
+        - master
+  - name: omics_mutect2
+    subclass: WDL
+    publish: True
+    primaryDescriptorPath: /WGS_pipeline/omics_mutect2.wdl
+    testParameterFiles:
+      - /test.json
+    filters: # All tags, no branches
+      branches:
+        - develop
+        - master
+  - name: manta_annot
+    subclass: WDL
+    publish: True
+    primaryDescriptorPath: /WGS_pipeline/manta_annot.wdl
+    testParameterFiles:
+      - /test.json
+    filters: # All tags, no branches
+      branches:
+        - develop
+        - master
+  - name: fix_mutect2_clust.wdl
+    subclass: WDL
+    publish: True
+    primaryDescriptorPath: /WGS_pipeline/fix_mutect2_clust.wdl
+    testParameterFiles:
+      - /test.json
+    filters: # All tags, no branches
+      branches:
+        - develop
+        - master
