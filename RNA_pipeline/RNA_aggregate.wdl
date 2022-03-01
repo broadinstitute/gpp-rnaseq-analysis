@@ -1,5 +1,5 @@
 import "rsem_aggregate_results.wdl" as rsem_aggregate_results
-import "Aggregate_Fusion_Calls.wdl" as Aggregate_Fusion_Calls
+#import "Aggregate_Fusion_Calls.wdl" as Aggregate_Fusion_Calls
 
 
 workflow RNA_aggregate {
@@ -8,6 +8,6 @@ workflow RNA_aggregate {
 
   call rsem_aggregate_results.rsem_aggregate_results
 
-  call Aggregate_Fusion_Calls.aggregate_set_files
+#  call Aggregate_Fusion_Calls.aggregate_set_files
 
 }
