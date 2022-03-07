@@ -4,8 +4,8 @@ workflows:
     subclass: WDL
     publish: True
     primaryDescriptorPath: /RNA_pipeline/RNA_aggregate.wdl
-    testParameterFiles:
-      - /test.json
+    #testParameterFiles:
+    #  - /test.json
     filters: # All tags, no branches
       branches:
         - develop
@@ -14,8 +14,8 @@ workflows:
     subclass: WDL
     publish: True
     primaryDescriptorPath: /RNA_pipeline/RNA_pipeline.wdl
-    testParameterFiles:
-      - /test.json
+    #testParameterFiles:
+    #  - /test.json
     filters: # All tags, no branches
       branches:
         - develop
@@ -24,8 +24,8 @@ workflows:
     subclass: WDL
     publish: True
     primaryDescriptorPath: /RNA_pipeline/rsem_depmap.wdl
-    testParameterFiles:
-      - /test.json
+    #testParameterFiles:
+    #  - /test.json
     filters: # All tags, no branches
       branches:
         - develop
