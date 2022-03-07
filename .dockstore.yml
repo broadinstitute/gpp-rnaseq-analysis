@@ -13,7 +13,7 @@ workflows:
   - name: RNA_pipeline
     subclass: WDL
     publish: True
-    primaryDescriptorPath: /RNA_pipeline/RNA_pipeline_modified.wdl
+    primaryDescriptorPath: /RNA_pipeline/RNA_pipeline.wdl
     testParameterFiles:
       - /test.json
     filters: # All tags, no branches
