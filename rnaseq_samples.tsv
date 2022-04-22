@@ -1,0 +1,4 @@
+entity:sample_id	fastq1	fastq2
+parental_control	gs://gpp_rnd_rnaseq/ALG-HT29-D12_R1_001.fastq.gz	gs://gpp_rnd_rnaseq/ALG-HT29-716-706-D12_R2_001.fastq.gz
+NbALFA_p65	gs://gpp_rnd_rnaseq/ALG-HT29-716-711-D12_R1_001.fastq.gz	gs://gpp_rnd_rnaseq/ALG-HT29-716-711-D12_R2_001.fastq.gz
+NbALFA_VP64	gs://gpp_rnd_rnaseq/ALG-HT29-716-706-D12_R1_001.fastq.gz	gs://gpp_rnd_rnaseq/ALG-HT29-716-706-D12_R2_001.fastq.gz

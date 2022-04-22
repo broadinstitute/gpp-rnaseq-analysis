@@ -1,0 +1,2 @@
+workspace:star_index	genes_gtf	rsem_reference
+gs://ccle_default_params/STAR_genome_GRCh38_noALT_noHLA_noDecoy_ERCC_v29_oh100.tar.gz	gs://ccle_default_params/references_gtex_gencode.v29.GRCh38.ERCC.genes.collapsed_only.gtf	gs://ccle_default_params/rsem_reference_GRCh38_gencode29_ercc.tar.gz
